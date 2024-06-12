@@ -1,5 +1,7 @@
 # MxrBoi.github.io
 
+If you are seeing this, you're in deep. They are already coming for you.
 
+If you want to start the process, go to this link: 
 
-heloo uigv97tv9765gb8nij mpokl3qzwxsdcyg uhjnime5fy8nj o,;
+Welcome to the game.
