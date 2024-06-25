@@ -34,15 +34,6 @@ function checkPassword() {
     document.getElementById('linkContainer').style.display = 'block';
   } else {
     alert('Incorrect password. Please try again.');
-    incorrectCounter += 1;
-  }
-
-  if (incorrectCounter === 5){
-    setTimeout(function() {
-            // Redirect to the desired URL
-            window.location.href = "https://mxrboi.github.io/README.md";
-        });
-    incorrectCounter = 0;
   }
 }
 </script>
