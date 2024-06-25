@@ -9,9 +9,9 @@
 
 <h1>Welcome.</h1>
 
-  <p>This isn't real. Look at Waltuh.</p>
-  <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png">
-  <p>Leave this place.</p>
+<p>This isn't real. Look at Waltuh.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="Walter White">
+<p>Leave this place.</p>
 
 <form id="passwordForm">
   <label for="password">Enter password:</label>
@@ -27,13 +27,22 @@
 <script>
 function checkPassword() {
   var password = document.getElementById('password').value;
-  var correctPassword = 'real'; // Replace 'yourpassword' with your actual password
-  var incorrectCounter = 0;
-  
+  var correctPassword = 'real'; // Replace 'real' with your actual password
+  var maxAttempts = 5; // Maximum number of incorrect attempts allowed
+  var incorrectCounter = parseInt(localStorage.getItem('incorrectCounter')) || 0;
+
   if (password === correctPassword) {
     document.getElementById('linkContainer').style.display = 'block';
   } else {
-    alert('Incorrect password. Please try again.');
+    incorrectCounter++;
+    localStorage.setItem('incorrectCounter', incorrectCounter);
+
+    if (incorrectCounter >= maxAttempts) {
+      // Redirect to a different page after too many incorrect attempts
+      window.location.href = 'https://mxrboi.github.io/README.md';
+    } else {
+      alert('Incorrect password. Please try again.');
+    }
   }
 }
 </script>
