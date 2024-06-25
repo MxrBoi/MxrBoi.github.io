@@ -1,11 +1,41 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <h1>Welcome.</h1>
-    <p>This isn't real. Look at Waltuh.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png">
-    <p>Leave this place.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>waltuh</title>
+</head>
+<body>
+
+<h1>Welcome.</h1>
+
+  <p>This isn't real. Look at Waltuh.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png">
+  <p>Leave this place.</p>
+
+<form id="passwordForm">
+  <label for="password">Enter password:</label>
+  <input type="password" id="password" name="password">
+  <button type="button" onclick="checkPassword()">Submit</button>
+</form>
+
+<div id="linkContainer" style="display: none;">
+  <p>Here is the secret link:</p>
+  <a href="https://example.com/secret-page">Secret Page</a>
+</div>
+
+<script>
+function checkPassword() {
+  var password = document.getElementById('password').value;
+  var correctPassword = 'yourpassword'; // Replace 'yourpassword' with your actual password
+  
+  if (password === correctPassword) {
+    document.getElementById('linkContainer').style.display = 'block';
+  } else {
+    alert('Incorrect password. Please try again.');
+  }
+}
+</script>
+
+</body>
 </html>
