@@ -1,6 +1,6 @@
 function checkPassword() {
   var password = document.getElementById('password').value;
-  var correctPassword = 'dsgfdgdfgsefedfsdfdfdssdfdssDdhghgjghhfdfsdasdafsgdghghkjghhsdfasdafsgtg'; // Replace 'real' with your actual password
+  var correctPassword = 'reality'; // Replace 'real' with your actual password
   var maxAttempts = 5; // Maximum number of incorrect attempts allowed
   var incorrectCounter = parseInt(localStorage.getItem('incorrectCounter')) || 0;
 
