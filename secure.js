@@ -1,4 +1,4 @@
-<script>
+
 function checkPassword() {
   var password = document.getElementById('password').value;
   var correctPassword = 'reality'; // Replace 'real' with your actual password
@@ -18,4 +18,3 @@ function checkPassword() {
       alert('Incorrect password. Please try again.');
     }
   }
-  </script>
