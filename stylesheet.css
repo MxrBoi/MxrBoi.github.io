@@ -1,6 +1,9 @@
 body {
   background-color: lightblue;
 
+        color: white;
+        text-shadow: 2, 2, 5, black;
+  
         text-align: center;
         padding: 20px;
         font-size: 50px;
