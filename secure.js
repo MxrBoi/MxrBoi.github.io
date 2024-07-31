@@ -7,14 +7,17 @@ function checkPassword() {
 
   if (password === correctPassword) {
     document.getElementById('linkContainer').style.display = 'block';
-  } else {
+  } 
+  else {
     incorrectCounter++;
     localStorage.setItem('incorrectCounter', incorrectCounter);
 
     if (incorrectCounter >= maxAttempts) {
       // Redirect to a different page after too many incorrect attempts
       window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    } else {
+    } 
+    else {
       alert('Incorrect password. Please try again.');
     }
+  }
   }
